@@ -1,0 +1,21 @@
+body {
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+#equalButton {
+	font-size: 50px;
+	display:block;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#formula {
+	padding: ;
+}
