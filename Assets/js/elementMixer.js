@@ -36,6 +36,7 @@ var formulas = {
 var createdElements = [];
 
 $(".row").on("click", "div", function() {
+	//Check if there is any space in the formula available
 	if ($("#firstElement").hasClass("questionMark")) {
 		var clickedElement = $(this).children("img").attr("class");
 		$("#firstElement").attr("class", clickedElement);
@@ -45,6 +46,9 @@ $(".row").on("click", "div", function() {
 			$("#secondElement").attr("class", clickedElement);
 		}
 	}
+
+	//Reset resulting element
+	$("#result").attr("class", "questionMark");
 });
 
 $("#formula span").on("click", function() {
