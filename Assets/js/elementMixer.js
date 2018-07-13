@@ -31,7 +31,9 @@ var formulas = {
 	"earth + potato": {class: "earthPotato", label: "Potato Mine"},
 	"potato + energy": {class: "wizardPotato", label: "Wizard Potato"},
 	"lava + potato": {class: "lavaPotato", label: "Flamin'Hot"}
-}
+};
+
+var createdElements = [];
 
 $(".row").on("click", "div", function() {
 	if ($("#firstElement").hasClass("questionMark")) {
@@ -69,17 +71,25 @@ $("#equalButton").on("click", function() {
 			resultLabel = formulas[formula2].label;
 		}
 		if (resultClass != null) {
-			//create new element
-			$(".row").append("<div class='col-lg-2 col-md-3 col-sm-4 col-xs-6 circle'><img class='" + resultClass + "'><span class='caption'>" + resultLabel + "</span></div>");
 
-			//change resulting element
-			$("#result").attr("class", resultClass);
+			//Check if element is repeated
+			let repeated = false;
+			for (let i = 0; i < createdElements.length; i++)
+				if (createdElements[i] == resultClass)
+					repeated = true;
 
-			//reset elements to question mark
-			$("#firstElement").attr("class", "questionMark");	
-			$("#secondElement").attr("class", "questionMark");			
+			if (!repeated) {
+				//create new element
+				createdElements.push(resultClass);
+				$(".row").append("<div class='col-lg-2 col-md-3 col-sm-4 col-xs-6 circle'><img class='" + resultClass + "'><span class='caption'>" + resultLabel + "</span></div>");
+
+				//change resulting element
+				$("#result").attr("class", resultClass);
+
+				//reset elements to question mark
+				$("#firstElement").attr("class", "questionMark");	
+				$("#secondElement").attr("class", "questionMark");	
+			}	
 		}
 	}
 });
-
-//Add code to create new element instead of removing hidden
