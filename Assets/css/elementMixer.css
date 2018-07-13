@@ -53,3 +53,19 @@ h1.circle img{
 .potato {
 	content:url("http://carismapotatoes.ca/wp-content/uploads/2016/09/potato.png");
 }
+
+.fire {
+	content:url("https://carleton.ca/ehs/wp-content/uploads/fire-240x296.png"); 
+}
+
+.earth {
+	content:url("https://orig00.deviantart.net/db81/f/2014/054/b/1/game_project___commissioned_ground_graphics_02_by_captaintoog-d77rhwi.png"); 
+}
+
+.water {
+	content:url("http://morgangenus.com/wp-content/uploads/2017/01/water-curl-wave-compressed.png"); 
+}
+
+.air {
+	content:url("http://standard.wellcertified.com/v9/sites/all/themes/wellfl/images/air-aqua.png"); 
+}

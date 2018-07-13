@@ -1,7 +1,20 @@
-var elementLinks = {
+/*var elementLinks = {
 	questionMark: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/2000px-Question_Mark.svg.png",
-	potato: "http://carismapotatoes.ca/wp-content/uploads/2016/09/potato.png"
-};
+	potato: "http://carismapotatoes.ca/wp-content/uploads/2016/09/potato.png",
+	fire: ,
+	earth: ,
+	water: ,
+	air: ,
+	mud: ,
+	brick: ,
+	rain: ,
+	plant: ,
+	lava: ,
+	obsidian: ,
+	grass: ,
+	dew: ,
+	swamp: ,
+};*/
 
 $(".row").on("click", "div", function() {
 	if ($("#firstElement").hasClass("questionMark")) {
