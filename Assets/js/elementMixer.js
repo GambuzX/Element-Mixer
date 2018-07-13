@@ -24,13 +24,23 @@ var formulas = {
 	"water + air": {class: "rain", label: "Rain" },
 	"water + earth": {class: "mud", label: "Mud" },
 	"air + earth" : {class: "dust", label: "Dust" },
-	"energy + energy": {class: "potato", label: "Potato" },
+	"energy + earth": {class: "potato", label: "Potato" },
 	"fire + potato": {class: "firePotato", label: "Burnt Potato" },
 	"water + potato": {class: "waterPotato", label: "Swimming Potato" },
 	"air + potato": {class: "airPotato", label: "Supah Potato" },
 	"earth + potato": {class: "earthPotato", label: "Potato Mine"},
 	"potato + energy": {class: "wizardPotato", label: "Wizard Potato"},
-	"lava + potato": {class: "lavaPotato", label: "Flamin'Hot"}
+	"lava + potato": {class: "lavaPotato", label: "Flamin'Hot"},
+	"potato + potato": {class: "megaPotato", label: "Mega Potato"},
+	"energy + water": {class: "tomato", label: "Tomato"},
+	"fire + tomato": {class: "fireTomato", label: "Flaming Tomato" },
+	"water + tomato": {class: "waterTomato", label: "Tomato Juice" },
+	"air + tomato": {class: "airTomato", label: "Pilot Tomato" },
+	"earth + tomato": {class: "earthTomato", label: "Tomato Planet"},
+	"tomato + energy": {class: "wizardTomato", label: "Wizard Tomato"},
+	"lava + tomato": {class: "lavaTomato", label: "Super Hot Sauce"},
+	"tomato + tomato": {class: "megaTomato", label: "Mega Tomato"},
+	"megaPotato + megaTomato": {class: "apocalypse", label: "Apocalypse"}
 };
 
 var createdElements = [];

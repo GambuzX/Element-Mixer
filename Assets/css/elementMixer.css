@@ -48,6 +48,10 @@ hr.style {
 	border: 1px solid black;
 }
 
+.circle:hover img {
+	cursor: pointer;
+}
+
 span.circle img{
 	height: 200px;
 	width: 200px;
@@ -55,6 +59,10 @@ span.circle img{
 h1.circle img{
 	height: 200px;
 	width: 200px;
+}
+
+h1.circle:hover img{
+	cursor: default;
 }
 
 .questionMark {
@@ -131,4 +139,44 @@ h1.circle img{
 
 .lavaPotato {
 	content:url("http://www.fritolay.com/images/default-source/blue-bag-image/lays-flamin-hot.png?sfvrsn=4d1e563a_2");
+}
+
+.megaPotato {
+	content:url("https://www.technologyreview.com/i/images/miraclepotatox392.gif");
+}
+
+.tomato {
+	content:url("http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c238.png");
+}
+
+.fireTomato {
+	content:url("http://static.burningtomato.com/images/burningtomato.gif");
+}
+
+.waterTomato {
+	content:url("http://cdn2.foodviva.com/static-content/food-images/juice-recipes/fresh-tomato-juice-recipe/fresh-tomato-juice-recipe.jpg");
+}
+
+.airTomato {
+	content:url("http://storage.googleapis.com/bro-cdn1/zgrid/themes/10419/images/logo-flyingtomato.jpg");
+}
+
+.earthTomato {
+	content:url("http://www.freakingnews.com/pictures/18500/Tomato-Earth-in-Space-18674.jpg");
+}
+
+.wizardTomato {
+	content:url("https://cdn.drawception.com/images/panels/2017/1-3/7PkqFX7bkF-8.png");
+}
+
+.lavaTomato {
+	content:url("http://greenmartsupershop.com/wp-content/uploads/2016/11/Pran-Hot-Tomato-Sauce.jpg");
+}
+
+.megaTomato {
+	content:url("http://i.imgur.com/FU9QKo7.gif");
+}
+
+.apocalypse {
+	content:url("https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif");
 }
