@@ -85,6 +85,10 @@ h1.circle img{
 	content:url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/9956988/b50b1fe664e65a255543f07449d6cedc534868ba.png"); 
 }
 
+.energy {
+	content:url("");
+}
+
 .lava {
 	content:url("https://vignette.wikia.nocookie.net/clubpenguin/images/b/b7/Lava_Pool.png/revision/latest/scale-to-width-down/2000?cb=20160602012752");
 }

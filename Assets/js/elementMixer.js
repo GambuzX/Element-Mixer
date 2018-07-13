@@ -16,6 +16,17 @@
 	swamp: ,
 };*/
 
+var formulas = {
+	"fire + water": {class: "steam", label: "Steam" },
+	"fire + earth": {class: "lava", label: "Lava" },
+	"water + water": {class: "sea", label: "Sea" }, 
+	"water + air": {class: "rain", label: "Rain" },
+	"water + earth": {class: "mud", label: "Mud" },
+	"air + earth" : {class: "dust", label: "Dust" },
+	"fire + potato": {class: "firePotato", label: "Burnt Potato" },
+	"water + potato": {class: "waterPotato", label: "Swimming Potato" }
+}
+
 $(".row").on("click", "div", function() {
 	if ($("#firstElement").hasClass("questionMark")) {
 		var clickedElement = $(this).children("img").attr("class");
@@ -37,13 +48,32 @@ $("#formula span").on("click", function() {
 $("#equalButton").on("click", function() {
 	let ele1 = $("#firstElement").attr("class");
 	let ele2 = $("#secondElement").attr("class");
-	console.log(ele1 + " + " + ele2);
+	let formula1 = ele1 + " + " + ele2;
+	let formula2 = ele2 + " + " + ele1;
 
 	//if two elements are selected
 	if (ele1 != "questionMark" && ele2 != "questionMark") {
-		if ( (ele1 + " + " + ele2) == "fire + water") {
-			$("#result").addClass("steam");
-			$(".steam").parent().removeAttr("hidden");
+		let resultClass = null;
+		let resultLabel = null;
+		if (formulas.hasOwnProperty(formula1)) {
+			resultClass = formulas[formula1].class;
+			resultLabel = formulas[formula1].label;
+		} else if (formulas.hasOwnProperty(formula2)){
+			resultClass = formulas[formula2].class;
+			resultLabel = formulas[formula2].label;
+		}
+		if (resultClass != null) {
+			//create new element
+			$(".row").append("<div class='col-lg-2 col-md-3 col-sm-4 col-xs-6 circle'><img class='" + resultClass + "'><span class='caption'>" + resultLabel + "</span></div>");
+
+			//change resulting element
+			$("#result").attr("class", resultClass);
+
+			//reset elements to question mark
+			$("#firstElement").attr("class", "questionMark");	
+			$("#secondElement").attr("class", "questionMark");			
 		}
 	}
 });
+
+//Add code to create new element instead of removing hidden
