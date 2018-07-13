@@ -2,6 +2,17 @@ body {
 	text-align: center;
 }
 
+label {
+  display: inline-block;
+  text-align: bottom;
+}
+
+.caption {
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+}
+
 #equalButton {
 	font-size: 50px;
 	display:block;
@@ -68,4 +79,8 @@ h1.circle img{
 
 .air {
 	content:url("http://standard.wellcertified.com/v9/sites/all/themes/wellfl/images/air-aqua.png"); 
+}
+
+.steam {
+	content:url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/9956988/b50b1fe664e65a255543f07449d6cedc534868ba.png"); 
 }
