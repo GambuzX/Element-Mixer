@@ -2,7 +2,6 @@ body {
 	text-align: center;
 }
 
-
 #equalButton {
 	font-size: 50px;
 	display:block;
@@ -30,7 +29,7 @@ hr.style {
 	margin-bottom: 30px;
 }
 
-.circle {
+.circle img {
 	border-radius: 50%;
 	height: 150px;
 	width: 150px;
@@ -38,11 +37,19 @@ hr.style {
 	border: 1px solid black;
 }
 
-span .circle {
+span.circle img{
 	height: 200px;
 	width: 200px;
 }
-h1 .circle {
+h1.circle img{
 	height: 200px;
 	width: 200px;
+}
+
+.questionMark {
+	content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/2000px-Question_Mark.svg.png"); 
+}
+
+.potato {
+	content:url("http://carismapotatoes.ca/wp-content/uploads/2016/09/potato.png");
 }
