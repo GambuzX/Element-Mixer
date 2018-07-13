@@ -84,3 +84,31 @@ h1.circle img{
 .steam {
 	content:url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/9956988/b50b1fe664e65a255543f07449d6cedc534868ba.png"); 
 }
+
+.lava {
+	content:url("https://vignette.wikia.nocookie.net/clubpenguin/images/b/b7/Lava_Pool.png/revision/latest/scale-to-width-down/2000?cb=20160602012752");
+}
+
+.rain {
+	content:url("https://cdn.pixabay.com/photo/2012/04/18/13/22/cloud-37011_960_720.png");
+}
+
+.mud {
+	content:url("http://www.acecleanuk.co.uk/wp-content/uploads/2015/04/Mud2-copy-300x300.png");
+}
+
+.sea {
+	content:url("http://www.svgcuts.com/fsvgfotw/2010/fsvgfotw_2010_06_19.png");
+}
+
+.dust {
+	content:url("https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/4/4f/Dust-png-27.png/revision/latest?cb=20170515002241");
+}
+
+.firePotato {
+	content:url("https://media.giphy.com/media/3o7bu4EJkrXG9Bvs9G/source.gif");
+}
+
+.waterPotato {
+	content:url("https://media-cdn.tripadvisor.com/media/photo-s/01/2c/d3/51/sharm-el-sheikh.jpg");
+}
