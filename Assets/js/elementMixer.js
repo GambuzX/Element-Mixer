@@ -33,3 +33,17 @@ $("#formula span").on("click", function() {
 		$(this).children("img").attr("class", "questionMark");
 	}
 });
+
+$("#equalButton").on("click", function() {
+	let ele1 = $("#firstElement").attr("class");
+	let ele2 = $("#secondElement").attr("class");
+	console.log(ele1 + " + " + ele2);
+
+	//if two elements are selected
+	if (ele1 != "questionMark" && ele2 != "questionMark") {
+		if ( (ele1 + " + " + ele2) == "fire + water") {
+			$("#result").addClass("steam");
+			$(".steam").parent().removeAttr("hidden");
+		}
+	}
+});
