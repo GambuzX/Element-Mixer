@@ -86,7 +86,7 @@ h1.circle img{
 }
 
 .energy {
-	content:url("");
+	content:url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Emc2.svg/2000px-Emc2.svg.png");
 }
 
 .lava {
@@ -115,4 +115,20 @@ h1.circle img{
 
 .waterPotato {
 	content:url("https://media-cdn.tripadvisor.com/media/photo-s/01/2c/d3/51/sharm-el-sheikh.jpg");
+}
+
+.airPotato {
+	content:url("https://pre00.deviantart.net/2ac3/th/pre/i/2013/120/4/9/supah_potato_by_eagle564-d63nyan.png");
+}
+
+.earthPotato {
+	content:url("http://pm1.narvii.com/6405/9f504ebd41eee91835dd3e8a4199fd1b84eb8c63_00.jpg");
+}
+
+.wizardPotato {
+	content:url("http://t01.deviantart.net/J_0IijTqx8zXW3QyxPWVI6NgiVM=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre09/54e1/th/pre/f/2016/153/0/1/potato_wizard_by_ninjamineturtle641-da4r8k7.png");
+}
+
+.lavaPotato {
+	content:url("http://www.fritolay.com/images/default-source/blue-bag-image/lays-flamin-hot.png?sfvrsn=4d1e563a_2");
 }

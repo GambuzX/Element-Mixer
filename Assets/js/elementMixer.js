@@ -19,12 +19,18 @@
 var formulas = {
 	"fire + water": {class: "steam", label: "Steam" },
 	"fire + earth": {class: "lava", label: "Lava" },
+	"fire + air": {class: "energy", label: "Energy"},
 	"water + water": {class: "sea", label: "Sea" }, 
 	"water + air": {class: "rain", label: "Rain" },
 	"water + earth": {class: "mud", label: "Mud" },
 	"air + earth" : {class: "dust", label: "Dust" },
+	"energy + energy": {class: "potato", label: "Potato" },
 	"fire + potato": {class: "firePotato", label: "Burnt Potato" },
-	"water + potato": {class: "waterPotato", label: "Swimming Potato" }
+	"water + potato": {class: "waterPotato", label: "Swimming Potato" },
+	"air + potato": {class: "airPotato", label: "Supah Potato" },
+	"earth + potato": {class: "earthPotato", label: "Potato Mine"},
+	"potato + energy": {class: "wizardPotato", label: "Wizard Potato"},
+	"lava + potato": {class: "lavaPotato", label: "Flamin'Hot"}
 }
 
 $(".row").on("click", "div", function() {
