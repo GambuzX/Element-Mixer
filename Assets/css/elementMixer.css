@@ -1,6 +1,7 @@
 html body {
 	text-align: center;
 	font-family: "Open Sans";
+	color: rgb(200,200,200);
 	background-color: rgb(50,50,50) !important;
 	/*background-image: url("https://cdn.dribbble.com/users/171243/screenshots/2072348/lab_dribbble_1x.jpg");
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@ label {
 
 #equalButton {
 	font-size: 50px;
+	color: black;
 	display:block;
 	height: 100px;
 	width: 100px;
@@ -50,7 +52,7 @@ div.jumbotron {
 hr.style {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     margin-top: 0;
 }
 

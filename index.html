@@ -9,37 +9,49 @@
 	<script type="text/javascript" src="Assets/js/lib/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1 id="formula">
-				<span class="circle"><img id="firstElement" class="questionMark"></span>
-			 	+ 
-			 	<span class="circle"><img id="secondElement" class="questionMark"></span>
-			 </h1>
-			<button id="equalButton" class="btn btn-lg">=</button>
-			<h1 class="circle"><img id="result" class="questionMark"></h1>
-		</div>
+	<div class="col-lg-2 col-sm-1" id="history">
+		<div> </div>
+		<button>History</button>
+	</div>
 
-		<hr class="style">
+	<div class="col-lg-8 col-sm-10">
+		<div class="container">
+			<div class="jumbotron">
+				<h1 id="formula">
+					<span class="circle"><img id="firstElement" class="questionMark"></span>
+				 	+ 
+				 	<span class="circle"><img id="secondElement" class="questionMark"></span>
+				 </h1>
+				<button id="equalButton" class="btn btn-lg">=</button>
+				<h1 class="circle"><img id="result" class="questionMark"></h1>
+			</div>
 
-		<div class="row">
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
-				<img class="fire">
-				<span class="caption">Fire</span>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
-				<img class="water">
-				<span class="caption">Water</span>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
-				<img class="earth">
-				<span class="caption">Earth</span>
-			</div>
-			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
-				<img class="air">
-				<span class="caption">Air</span>
+			<hr class="style">
+
+			<div class="row">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
+					<img class="fire">
+					<span class="caption">Fire</span>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
+					<img class="water">
+					<span class="caption">Water</span>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
+					<img class="earth">
+					<span class="caption">Earth</span>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 circle">
+					<img class="air">
+					<span class="caption">Air</span>
+				</div>
 			</div>
 		</div>
+	</div>	
+
+	<div class="col-lg-2 col-sm-1" id="knownFormulas">
+		<div> </div>
+		<button>Formulas</button>
 	</div>
 	<script type="text/javascript" src="Assets/js/elementMixer.js"></script>
 </body>
