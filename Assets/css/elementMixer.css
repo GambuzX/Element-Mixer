@@ -1,5 +1,10 @@
-body {
+html body {
 	text-align: center;
+	font-family: "Open Sans";
+	background-color: rgb(50,50,50) !important;
+	/*background-image: url("https://cdn.dribbble.com/users/171243/screenshots/2072348/lab_dribbble_1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;*/
 }
 
 label {
@@ -7,10 +12,15 @@ label {
   text-align: bottom;
 }
 
+.jumbotron {
+	background-color: rgb(50,50,50) !important;
+}
+
 .caption {
 	text-align: center;
 	font-size: 1.5em;
 	display: block;
+	color: white;
 }
 
 #equalButton {
@@ -21,6 +31,14 @@ label {
 	border-radius: 50%;
 	border: 1px solid black;
 	margin: 0 auto;
+}
+
+#equalButton:hover {
+	opacity: 0.7;
+}
+
+#equalButton:active {
+	opacity: 0.5;
 }
 
 div.jumbotron {
@@ -41,15 +59,22 @@ hr.style {
 }
 
 .circle img {
-	border-radius: 50%;
 	height: 150px;
 	width: 150px;
 	object-fit: contain;
+	background-color: rgb(200,200,200);
 	border: 1px solid black;
+	border-radius: 50%;
 }
 
 .circle:hover img {
 	cursor: pointer;
+	opacity: 0.7;
+}
+
+.circle:active img {
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 span.circle img{
@@ -63,6 +88,7 @@ h1.circle img{
 
 h1.circle:hover img{
 	cursor: default;
+	opacity: 1;
 }
 
 .questionMark {
