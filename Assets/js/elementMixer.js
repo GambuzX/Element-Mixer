@@ -44,6 +44,7 @@ var formulas = {
 };
 
 var createdElements = [];
+var historyCounter = 0;
 
 $(".row").on("click", "div", function() {
 	//Check if there is any space in the formula available
@@ -84,8 +85,13 @@ $("#equalButton").on("click", function() {
 			resultClass = formulas[formula2].class;
 			resultLabel = formulas[formula2].label;
 		}
-		if (resultClass != null) {
 
+		// Update tried formulas registry
+		historyCounter++;
+		$("#attemptedFormulas").append("<li><strong>" + historyCounter + ".</strong> " + ele1 + " + " + ele2 + " = " + (resultClass == null ? "?" : resultClass) + "</li>")
+
+		// Verify if it is a new element
+		if (resultClass != null) {
 			//Check if element is repeated
 			let repeated = false;
 			for (let i = 0; i < createdElements.length; i++)
@@ -105,6 +111,7 @@ $("#equalButton").on("click", function() {
 				$("#secondElement").attr("class", "questionMark");	
 			}	
 		}
+
 	}
 });
 

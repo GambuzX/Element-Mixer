@@ -71,13 +71,13 @@ label {
 
 .button-historyUp {
 	position: absolute;
-	left: 280px;
+	left: 87%;
 	top: 50%;
 }
 
 .button-historyHidden {
 	position: absolute;
-	left: -25px;
+	left: -8%;
 	top: 50%;
 }
 
@@ -91,6 +91,7 @@ label {
 	list-style-type: none;
 	padding: 20px 10px;
 	color: rgb(50,50,50);
+	text-align: left;
 	background-color: rgb(200,200,200); 
 }
 
