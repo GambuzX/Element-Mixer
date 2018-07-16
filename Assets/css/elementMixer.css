@@ -39,7 +39,7 @@ label {
 	color: rgb(50,50,50);
 	font-size: 1.5em;
 	background-color: rgb(200,200,200);
-	border: none;
+	border: 1px solid rgb(50,50,50);
 	border-radius: 10%;
 }
 
@@ -63,6 +63,7 @@ label {
 #history>div {
 	border-right: 1px solid rgb(200,200,200);
 	height: 100%;
+	width: 90%;
 }
 
 #history>button {
@@ -71,7 +72,7 @@ label {
 
 .button-historyUp {
 	position: absolute;
-	left: 87%;
+	left: 77%;
 	top: 50%;
 }
 
