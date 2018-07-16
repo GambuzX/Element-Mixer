@@ -52,6 +52,11 @@ label {
 	margin: 0;
 }
 
+#history>div {
+	border-right: 1px solid rgb(200,200,200);
+	height: 100%;
+}
+
 #history>button {
 	position: absolute;
 	left: -25px;
@@ -59,6 +64,9 @@ label {
 	color: rgb(50,50,50);
 	font-size: 1.5em;
 	transform: rotate(-90deg);
+	background-color: rgb(200,200,200);
+	border: none;
+	border-radius: 10%;
 }
 
 #attemptedFormulas {
@@ -66,7 +74,8 @@ label {
 }
 
 #attemptedFormulas>li {
-	border: 1px solid black;
+	width: 100%;
+	border-bottom: 5px solid rgb(50,50,50);
 	list-style-type: none;
 	padding: 20px 10px;
 	color: rgb(50,50,50);
@@ -86,6 +95,9 @@ label {
 	color: rgb(50,50,50);
 	font-size: 1.5em;
 	transform: rotate(90deg);
+	background-color: rgb(200,200,200); 
+	border: none;
+	border-radius: 10%;
 }
 
 #equalButton:hover {
