@@ -1,6 +1,13 @@
-html body {
+html {
+	height: 100%;
+	width: 100%;
+}
+
+html>body {
 	text-align: center;
 	font-family: "Open Sans";
+	height: 100%;
+	width: 100%;
 	color: rgb(200,200,200);
 	background-color: rgb(50,50,50) !important;
 	/*background-image: url("https://cdn.dribbble.com/users/171243/screenshots/2072348/lab_dribbble_1x.jpg");
@@ -35,6 +42,48 @@ label {
 	margin: 0 auto;
 }
 
+#history {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#history>button {
+	position: absolute;
+	left: -25px;
+	top: 50%;
+	color: rgb(50,50,50);
+	font-size: 1.5em;
+	transform: rotate(-90deg);
+}
+
+#attemptedFormulas {
+	padding: 0;
+}
+
+#attemptedFormulas>li {
+	border: 1px solid black;
+	list-style-type: none;
+	padding: 20px 10px;
+	color: rgb(50,50,50);
+	background-color: rgb(200,200,200); 
+}
+
+#knownFormulas {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#knownFormulas>button {
+	position: absolute;
+	left: 250px;
+	top: 50%;
+	color: rgb(50,50,50);
+	font-size: 1.5em;
+	transform: rotate(90deg);
+}
+
 #equalButton:hover {
 	opacity: 0.7;
 }
@@ -56,11 +105,11 @@ hr.style {
     margin-top: 0;
 }
 
-.row div {
+.row>div {
 	margin-bottom: 30px;
 }
 
-.circle img {
+.circle>img {
 	height: 150px;
 	width: 150px;
 	object-fit: contain;
@@ -69,26 +118,26 @@ hr.style {
 	border-radius: 50%;
 }
 
-.circle:hover img {
+.circle:hover>img {
 	cursor: pointer;
 	opacity: 0.7;
 }
 
-.circle:active img {
+.circle:active>img {
 	cursor: pointer;
 	opacity: 0.5;
 }
 
-span.circle img{
+span.circle>img{
 	height: 200px;
 	width: 200px;
 }
-h1.circle img{
+h1.circle>img{
 	height: 200px;
 	width: 200px;
 }
 
-h1.circle:hover img{
+h1.circle:hover>img{
 	cursor: default;
 	opacity: 1;
 }
