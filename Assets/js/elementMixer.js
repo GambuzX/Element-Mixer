@@ -107,3 +107,7 @@ $("#equalButton").on("click", function() {
 		}
 	}
 });
+
+$("#history>button").on("click", function() {
+	$("#history>div").toggleClass("hidden");
+});

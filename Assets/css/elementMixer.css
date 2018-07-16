@@ -20,6 +20,10 @@ label {
   text-align: bottom;
 }
 
+.hidden {
+	display: none;
+}
+
 .jumbotron {
 	background-color: rgb(50,50,50) !important;
 }
