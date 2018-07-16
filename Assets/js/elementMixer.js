@@ -110,4 +110,9 @@ $("#equalButton").on("click", function() {
 
 $("#history>button").on("click", function() {
 	$("#history>div").toggleClass("hidden");
+	if ($("#history>div").hasClass("hidden")) {
+		$("#history>button").attr("class", "side-button button-historyHidden");
+	} else {
+		$("#history>button").attr("class", "side-button button-historyUp");
+	}
 });

@@ -35,6 +35,14 @@ label {
 	color: white;
 }
 
+.side-button {
+	color: rgb(50,50,50);
+	font-size: 1.5em;
+	background-color: rgb(200,200,200);
+	border: none;
+	border-radius: 10%;
+}
+
 #equalButton {
 	font-size: 50px;
 	color: black;
@@ -58,15 +66,19 @@ label {
 }
 
 #history>button {
+	transform: rotate(-90deg);
+}
+
+.button-historyUp {
+	position: absolute;
+	left: 280px;
+	top: 50%;
+}
+
+.button-historyHidden {
 	position: absolute;
 	left: -25px;
 	top: 50%;
-	color: rgb(50,50,50);
-	font-size: 1.5em;
-	transform: rotate(-90deg);
-	background-color: rgb(200,200,200);
-	border: none;
-	border-radius: 10%;
 }
 
 #attemptedFormulas {
@@ -92,12 +104,7 @@ label {
 	position: absolute;
 	left: 250px;
 	top: 50%;
-	color: rgb(50,50,50);
-	font-size: 1.5em;
 	transform: rotate(90deg);
-	background-color: rgb(200,200,200); 
-	border: none;
-	border-radius: 10%;
 }
 
 #equalButton:hover {
